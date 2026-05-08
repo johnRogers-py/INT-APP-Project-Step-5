@@ -1,0 +1,82 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Ergonomic Mesh Office Chair with Lumbar Support",
+      "price": 249.99,
+      "originalPrice": 329.99,
+      "rating": 4.7,
+      "reviews": 8214,
+      "category": "Furniture",
+      "image": "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=400&h=400&fit=crop&auto=format",
+      "description": "Adjustable lumbar support, breathable mesh back, 360° swivel, armrests, and seat height adjustment. Supports up to 300 lbs.",
+      "prime": true,
+      "badge": "Best Seller"
+    },
+    {
+      "id": "2",
+      "title": "Apple MacBook Pro 14-inch Laptop, M3 Pro Chip, 18GB RAM, 512GB SSD",
+      "price": 1599,
+      "originalPrice": 1999,
+      "rating": 4.9,
+      "reviews": 21450,
+      "category": "Computers",
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=400&fit=crop&auto=format",
+      "description": "M3 Pro chip with 11-core CPU and 14-core GPU. Up to 18 hours of battery life. Stunning Liquid Retina XDR display.",
+      "prime": true,
+      "badge": "Amazon's Choice"
+    },
+    {
+      "id": "3",
+      "title": "Solid Wood Writing Desk with Drawer, 55 Inch Home Office Desk",
+      "price": 319.99,
+      "originalPrice": 429.99,
+      "rating": 4.6,
+      "reviews": 5832,
+      "category": "Furniture",
+      "image": "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=400&h=400&fit=crop&auto=format",
+      "description": "Rustic solid wood surface, built-in storage drawer, sturdy metal legs, easy assembly. 55\" W x 24\" D x 30\" H.",
+      "prime": true,
+      "badge": null
+    },
+    {
+      "id": "4",
+      "title": "LEGO Icons Wildflower Bouquet Set – Artificial Flowers with Roses (939 Pieces)",
+      "price": 49.99,
+      "originalPrice": 59.99,
+      "rating": 4.8,
+      "reviews": 14302,
+      "category": "Toys",
+      "image": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=400&fit=crop&auto=format",
+      "description": "Build a beautiful bouquet of wildflowers with 939 LEGO pieces. Includes poppies, lavender, and roses. Great for display or gifting.",
+      "prime": true,
+      "badge": "Best Seller"
+    },
+    {
+      "id": "5",
+      "title": "OREO Double Stuf Chocolate Sandwich Cookies, Family Size, 18.71 oz",
+      "price": 5.98,
+      "originalPrice": 7.49,
+      "rating": 4.8,
+      "reviews": 92310,
+      "category": "Grocery",
+      "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=400&fit=crop&auto=format",
+      "description": "Double Stuf OREO cookies with twice the creamy filling. Perfect for snacking, desserts, or sharing. Resealable family-size pack.",
+      "prime": true,
+      "badge": "Amazon's Choice"
+    }
+  ],
+  "cart": [
+    {
+      "productId": "3",
+      "quantity": 1,
+      "id": "CgVYjXLV6w4"
+    },
+    {
+      "productId": "1",
+      "quantity": 1,
+      "id": "ELzqmzMYI0g"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,177 @@
+/* ── ProtectionPlans CSS Module ── */
+
+.page {
+  min-height: 100vh;
+  background: #EAEDED;
+  font-family: 'Amazon Ember', 'Helvetica Neue', Arial, sans-serif;
+}
+.topBar {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.backBtn { background: none; border: none; color: #007185; font-size: 0.88rem; cursor: pointer; padding: 0; }
+.backBtn:hover { color: #C7511F; text-decoration: underline; }
+.pageTitle { font-size: 1.2rem; font-weight: 700; color: #0F1111; margin: 0; }
+
+.layout { max-width: 960px; margin: 0 auto; padding: 0 16px 60px; }
+
+.hero {
+  background: linear-gradient(135deg, #131921, #37475A);
+  color: #fff;
+  text-align: center;
+  padding: 36px 20px;
+  margin-bottom: 28px;
+}
+.heroTitle { font-size: 1.6rem; font-weight: 700; margin-bottom: 8px; }
+.heroSub { font-size: 1rem; color: #ccc; margin: 0; }
+
+/* Plans */
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+@media (max-width: 700px) { .plansGrid { grid-template-columns: 1fr; } }
+
+.planCard {
+  background: #fff;
+  border: 2px solid #D5D9D9;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.planCard:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+.planCardSelected { border-color: var(--plan-color, #FF9900); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+
+.planBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #FF9900;
+  color: #111;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.planHeader {
+  padding: 20px 18px 16px;
+  color: #fff;
+  text-align: center;
+}
+.planName { font-size: 1rem; font-weight: 700; margin: 0 0 10px; }
+.planPrice { display: flex; align-items: baseline; justify-content: center; gap: 1px; }
+.planPriceCurrency { font-size: 1rem; font-weight: 600; vertical-align: super; }
+.planPriceWhole { font-size: 2.2rem; font-weight: 700; line-height: 1; }
+.planPriceFraction { font-size: 1rem; font-weight: 600; vertical-align: super; }
+.planPriceSub { font-size: 0.75rem; opacity: 0.8; margin: 4px 0 0; }
+
+.planFeatures { list-style: none; padding: 16px 18px; margin: 0; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.planFeature { font-size: 0.84rem; color: #0F1111; display: flex; align-items: flex-start; gap: 6px; }
+.checkIcon { color: #007600; font-weight: 700; flex-shrink: 0; }
+
+.btnYellow {
+  margin: 0 18px 18px;
+  background: linear-gradient(to bottom, #FFD814, #F0C14B);
+  border: 1px solid #A88734;
+  border-radius: 20px;
+  padding: 9px 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #111;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.btnYellow:hover { background: linear-gradient(to bottom, #F7CA00, #E5B81A); }
+.btnSelected {
+  margin: 0 18px 18px;
+  background: #e8f5e9;
+  border: 1px solid #388e3c;
+  border-radius: 20px;
+  padding: 9px 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1b5e20;
+  cursor: pointer;
+}
+
+.selectionBanner {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  color: #155724;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.bannerClose { background: none; border: none; color: #155724; cursor: pointer; font-size: 1rem; }
+
+/* How It Works */
+.howSection { margin-bottom: 30px; }
+.howTitle { font-size: 1.1rem; font-weight: 700; color: #0F1111; margin-bottom: 16px; }
+.howSteps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+@media (max-width: 700px) { .howSteps { grid-template-columns: repeat(2, 1fr); } }
+.howStep {
+  background: #fff;
+  border: 1px solid #D5D9D9;
+  border-radius: 8px;
+  padding: 18px;
+  text-align: center;
+}
+.howNum {
+  width: 32px; height: 32px;
+  background: #131921;
+  color: #FF9900;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+.howStepTitle { font-size: 0.88rem; font-weight: 700; color: #0F1111; margin: 0 0 6px; }
+.howStepDesc { font-size: 0.8rem; color: #565959; margin: 0; }
+
+/* FAQs */
+.faqSection { }
+.faqTitle { font-size: 1.1rem; font-weight: 700; color: #0F1111; margin-bottom: 12px; }
+.faqItem {
+  background: #fff;
+  border: 1px solid #D5D9D9;
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.faqItem:hover { background: #fafafa; }
+.faqQ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0F1111;
+}
+.faqArrow { font-size: 0.7rem; color: #565959; }
+.faqA { font-size: 0.85rem; color: #565959; margin: 10px 0 0; line-height: 1.5; }

@@ -1,0 +1,88 @@
+/* ── SearchBar CSS Module ── */
+
+.form {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+  height: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: border-color 0.15s;
+  min-width: 0;
+}
+
+.formFocused {
+  border-color: #FF9900;
+}
+
+/* Category Dropdown */
+.categorySelect {
+  background: #f3f3f3;
+  border: none;
+  border-right: 1px solid #ccc;
+  padding: 0 6px 0 8px;
+  font-size: 0.76rem;
+  color: #111;
+  cursor: pointer;
+  outline: none;
+  flex-shrink: 0;
+  max-width: 120px;
+  border-radius: 4px 0 0 4px;
+}
+.categorySelect:hover { background: #e8e8e8; }
+
+/* Vertical divider */
+.divider {
+  width: 1px;
+  background: #ccc;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+/* Text Input */
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  font-size: 0.9rem;
+  color: #111;
+  background: #fff;
+  min-width: 0;
+}
+.input::-webkit-search-cancel-button { display: none; }
+
+/* Clear button */
+.clearBtn {
+  background: #fff;
+  border: none;
+  padding: 0 8px;
+  color: #888;
+  cursor: pointer;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+.clearBtn:hover { color: #111; }
+
+/* Search Submit Button */
+.searchBtn {
+  background: #FF9900;
+  border: none;
+  padding: 0 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.15s;
+}
+.searchBtn:hover { background: #e88900; }
+.searchBtn:active { background: #d47800; }
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+}

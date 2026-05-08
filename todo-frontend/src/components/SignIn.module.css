@@ -1,0 +1,182 @@
+/* ── SignIn CSS Module ── */
+
+.page {
+  min-height: 100vh;
+  background: #EAEDED;
+  font-family: 'Amazon Ember', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.topBar {
+  background: #131921;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+}
+.backBtn {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 0.88rem;
+  cursor: pointer;
+  padding: 0;
+}
+.backBtn:hover { color: #FF9900; }
+
+.card {
+  max-width: 380px;
+  margin: 40px auto;
+  background: #fff;
+  border: 1px solid #D5D9D9;
+  border-radius: 8px;
+  padding: 30px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #131921;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.logo span { color: #FF9900; }
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #0F1111;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0F1111;
+  gap: 4px;
+}
+
+.input {
+  border: 1px solid #888;
+  border-radius: 4px;
+  padding: 7px 10px;
+  font-size: 0.9rem;
+  color: #0F1111;
+  outline: none;
+  width: 100%;
+}
+.input:focus {
+  border-color: #FF9900;
+  box-shadow: 0 0 0 2px rgba(255,153,0,0.3);
+}
+
+.btnYellow {
+  background: linear-gradient(to bottom, #FFD814, #F0C14B);
+  border: 1px solid #A88734;
+  border-radius: 4px;
+  padding: 9px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #111;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.15s;
+}
+.btnYellow:hover { background: linear-gradient(to bottom, #F7CA00, #E5B81A); }
+
+.btnOutline {
+  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  border: 1px solid #adb1b8;
+  border-radius: 4px;
+  padding: 9px 16px;
+  font-size: 0.88rem;
+  color: #0F1111;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.15s;
+}
+.btnOutline:hover { background: linear-gradient(to bottom, #e7e9ec, #d9dce1); }
+
+.terms {
+  font-size: 0.75rem;
+  color: #565959;
+  line-height: 1.4;
+  margin: 0;
+}
+.link { color: #007185; font-size: inherit; }
+.link:hover { color: #C7511F; text-decoration: underline; }
+
+.emailDisplay {
+  font-size: 0.88rem;
+  color: #0F1111;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.changeLink {
+  background: none;
+  border: none;
+  color: #007185;
+  font-size: 0.82rem;
+  cursor: pointer;
+  padding: 0;
+}
+.changeLink:hover { color: #C7511F; text-decoration: underline; }
+
+.forgotLink {
+  font-size: 0.82rem;
+  color: #007185;
+  text-decoration: none;
+  text-align: center;
+}
+.forgotLink:hover { color: #C7511F; text-decoration: underline; }
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+  color: #767676;
+}
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  border-top: 1px solid #D5D9D9;
+}
+
+.successIcon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #00a854, #007a3d);
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+}
+.successTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #007600;
+  text-align: center;
+  margin: 0;
+}
+.successSub {
+  font-size: 0.88rem;
+  color: #565959;
+  text-align: center;
+  margin: 0;
+}

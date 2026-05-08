@@ -1,0 +1,56 @@
+/* Global resets and base styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Amazon Ember', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #EAEDED;
+  color: #0F1111;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove default button/input focus outlines and replace with accessible ones */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #FF9900;
+  outline-offset: 2px;
+}
+
+/* Smooth image loading */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove Bootstrap's default form control blue focus ring,
+   let our module CSS handle it */
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 153, 0, 0.25);
+  border-color: #FF9900;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}

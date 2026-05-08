@@ -1,4 +1,4 @@
-# AmazonClone — Step 4 React Shopping App
+# AmazonClone — Step 5 React Shopping App
 
 An Amazon.com-inspired shopping app built with React, Bootstrap 5, and JSON Server.
 
